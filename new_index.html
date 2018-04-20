@@ -1,0 +1,38 @@
+<mat-form-field>
+  <input matInput placeholder="enter your name">
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="email">
+</mat-form-field>
+<mat-form-field>
+  <input matInput placeholder="id">
+</mat-form-field>
+<mat-radio-group class="example-radio-group">
+  <mat-radio-button class="example-radio-button" value="1">"mobile"</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="2">"TV"</mat-radio-button>
+  <mat-radio-button class="example-radio-button" value="3">"computer"</mat-radio-button>
+</mat-radio-group>
+<mat-form-field>
+  <textarea matInput placeholder="Enter some text here">
+  </textarea>
+</mat-form-field>
+<mat-checkbox>check me</mat-checkbox>
+<mat-checkbox>check me also</mat-checkbox>
+<mat-form-field class="example-full-width">
+  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker touchUi="true" #picker></mat-datepicker>
+</mat-form-field>
+<mat-form-field>
+  <mat-select placeholder="Select an option">
+    <mat-option value="areoplane">areoplane</mat-option>
+    <mat-option value="car">car</mat-option>
+    <mat-option value="bus">bus</mat-option>
+    <mat-option value="train">train</mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-slider></mat-slider>
+<mat-slide-toggle>Slide Me</mat-slide-toggle>
+<button class="btn" mat-raised-button color="primary">Button 1</button>
+<button class="btn" mat-raised-button color="accent">Button 2</button>
+<button class="btn" mat-raised-button color="warn">Button 3</button>

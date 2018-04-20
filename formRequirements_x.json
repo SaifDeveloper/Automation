@@ -1,0 +1,41 @@
+{
+  "textbox":{
+  "number":3,
+  "placeholders":["enter your name","email","id"]
+},
+  "radio":{
+    "number":1,
+    "options":["mobile","TV","computer"],
+    "values":["1","2","3"]
+  },
+  "textarea":{
+    "number":1,
+    "placeholders":["Enter some text here","Enter some more text here"]
+  },
+  "checkbox":{
+    "number":2,
+    "placeholders":["check me","check me also"]
+  },
+  "datepicker":{
+    "number":1
+  },
+  "select":{
+    "number":1,
+    "placeholders":["Select an option"],
+    "options":["areoplane","car","bus","train"],
+    "values":["areoplane","car","bus","train"]
+
+  },
+  "slider":{
+    "number":1
+  },
+  "slide_toggle":{
+    "number":1,
+    "placeholders":["Slide Me","Slide Me also"]
+  },
+  "buttons":{
+    "number":4,
+    "placeholders":["Button 1","Button 2","Button 3","Button 4"],
+    "color":["primary","accent","warn","primary"]
+  }
+}

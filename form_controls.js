@@ -22,7 +22,7 @@ const datepicker = `<mat-form-field class="example-full-width">
 
 
 const select = `<mat-form-field>
-                      <mat-select>
+                      <mat-select placeholder="Select an option">
                         <mat-option>None</mat-option>
                         <mat-option value="option1">Option 1</mat-option>
                         <mat-option value="option2">Option 2</mat-option>
