@@ -1,0 +1,11 @@
+{
+  "textbox":5,
+  "radio":1,
+  "textarea":1,
+  "checkbox":1,
+  "datepicker":1,
+  "select":1,
+  "slider":1,
+  "slide_toggle":1,
+  "button":2
+}
