@@ -4,9 +4,9 @@
   "placeholders":["enter your name","email","id"]
 },
   "radio":{
-    "number":1,
-    "options":["mobile","TV","computer"],
-    "values":["1","2","3"]
+    "number":2,
+    "options":[["mobile","TV","computer"],["bus","aeroplane","car","cycle"]],
+    "values":[["1","2","3"],["4","5","6","7"]]
   },
   "textarea":{
     "number":1,
@@ -20,10 +20,10 @@
     "number":1
   },
   "select":{
-    "number":1,
+    "number":2,
     "placeholders":["Select an option"],
-    "options":["areoplane","car","bus","train"],
-    "values":["areoplane","car","bus","train"]
+    "options":[["areoplane","car","bus","train"],["fridge","washing machine","microwave oven"]],
+    "values":[["areoplane","car","bus","train"],["fridge","washing machine","microwave oven"]]
 
   },
   "slider":{
@@ -34,7 +34,7 @@
     "placeholders":["Slide Me","Slide Me also"]
   },
   "buttons":{
-    "number":4,
+    "number":2,
     "placeholders":["Button 1","Button 2","Button 3","Button 4"],
     "color":["primary","accent","warn","primary"]
   }
