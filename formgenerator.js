@@ -185,7 +185,7 @@ for(let i=0;i<requirements.length;i++){
                 if (err) console.log(err);
                 console.log("UPDATED Dialog Content")
             });
-
+            break;
         default:
             console.log("DEFAULT")
     }
