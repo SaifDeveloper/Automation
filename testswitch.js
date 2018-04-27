@@ -74,28 +74,34 @@ for (let key in requirements) {
             case "radio":
                 //console.log("Number of",key,":",val.number);
                 let looplength = [];
-                for (let k=0;k<val.number;k++){
-                    // console.log("Options length:",options[k].length);
-                    looplength.push(options[k].length);
-                }
-                let maxLoopLength = Math.max(...looplength)
-                //console.log("Max Length:",Math.max(...looplength));
-
-                //options_len = options[0].length;
-                //console.log("Options lengths:",options_len);
-                for (let i=0;i<val.number;i++){
-                    let preradio =`<mat-radio-group class="example-radio-group">`;
-                    genhtml += preradio;
-                    // console.log("Options:",options[0][1]);
-                    for(let j=0;j<maxLoopLength;j++){
-                        if (options[i][j] !== undefined && values[i][j] !== undefined) {
-                            //console.log("Options:", options[j]);
-                            genhtml += `<mat-radio-button class="example-radio-button" value="`+values[i][j]+'"'+`>`+options[i][j]+`</mat-radio-button>`
-
-                        }
+                if(val.number===options.length) {
+                    for (let k = 0; k < val.number; k++) {
+                        // console.log("Options length:",options[k].length);
+                        looplength.push(options[k].length);
                     }
-                    let postradio = `</mat-radio-group>`;
-                    genhtml +=postradio;
+                    let maxLoopLength = Math.max(...looplength);
+                    //console.log("maxLoopLength", maxLoopLength);
+                    //console.log("Max Length:",Math.max(...looplength));
+
+                    //options_len = options[0].length;
+                    //console.log("Options lengths:",options_len);
+                    for (let i = 0; i < val.number; i++) {
+                        let preradio = `<mat-radio-group class="example-radio-group">`;
+                        genhtml += preradio;
+                        // console.log("Options:",options[0][1]);
+                        for (let j = 0; j < maxLoopLength; j++) {
+                            if (options[i][j] !== undefined && values[i][j] !== undefined) {
+                                //console.log("Options:", options[j]);
+                                genhtml += `<mat-radio-button class="example-radio-button" value="` + values[i][j] + '"' + `>` + options[i][j] + `</mat-radio-button>`
+
+                            }
+                        }
+                        let postradio = `</mat-radio-group>`;
+                        genhtml += postradio;
+                    }
+                }else {
+                    console.log("RADIO BUTTONS NOT UPDATED !")
+                    console.log("Please check the number of 'options' in formRequirements_x.json file")
                 }
 
 
@@ -122,24 +128,29 @@ for (let key in requirements) {
 
                 break;
             case "select":
-                let selectlooplength = [];
-                for (let k=0;k<val.number;k++){
-                    // console.log("Options length:",options[k].length);
-                    selectlooplength.push(options[k].length);
-                }
-                let maxSelectLoopLength = Math.max(...selectlooplength);
-                for (let i=0;i<val.number;i++){
-                    let preselect =`<mat-form-field><mat-select placeholder=`+'"'+placeholders[0]+'"'+`>`;
-                    genhtml += preselect;
-                    for(let j=0;j<maxSelectLoopLength;j++){
-                        if (options[i][j] !== undefined && values[i][j] !== undefined) {
-
-                            genhtml += `<mat-option value=`+'"'+values[i][j]+'"'+`>`+options[i][j]+`</mat-option>`
-                        }
+                if(val.number===options.length) {
+                    let selectlooplength = [];
+                    for (let k = 0; k < val.number; k++) {
+                        // console.log("Options length:",options[k].length);
+                        selectlooplength.push(options[k].length);
                     }
-                    let postselect = `</mat-select>
+                    let maxSelectLoopLength = Math.max(...selectlooplength);
+                    for (let i = 0; i < val.number; i++) {
+                        let preselect = `<mat-form-field><mat-select placeholder=` + '"' + placeholders[0] + '"' + `>`;
+                        genhtml += preselect;
+                        for (let j = 0; j < maxSelectLoopLength; j++) {
+                            if (options[i][j] !== undefined && values[i][j] !== undefined) {
+
+                                genhtml += `<mat-option value=` + '"' + values[i][j] + '"' + `>` + options[i][j] + `</mat-option>`
+                            }
+                        }
+                        let postselect = `</mat-select>
                  </mat-form-field>`;
-                    genhtml +=postselect;
+                        genhtml += postselect;
+                    }
+                }else {
+                    console.log("SELECT NOT UPDATED !")
+                    console.log("Please check the number of 'options' in formRequirements_x.json file")
                 }
 
                 break;

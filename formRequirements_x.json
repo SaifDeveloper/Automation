@@ -5,8 +5,8 @@
 },
   "radio":{
     "number":2,
-    "options":[["mobile","TV","computer"],["bus","aeroplane","car","cycle"]],
-    "values":[["1","2","3"],["4","5","6","7"]]
+    "options":[["mobile","TV","computer"],["fridge","washing machine"]],
+    "values":[["1","2","3"],["4","5","6"]]
   },
   "textarea":{
     "number":1,
@@ -22,8 +22,8 @@
   "select":{
     "number":2,
     "placeholders":["Select an option"],
-    "options":[["areoplane","car","bus","train"],["fridge","washing machine","microwave oven"]],
-    "values":[["areoplane","car","bus","train"],["fridge","washing machine","microwave oven"]]
+    "options":[["areoplane","car","bus","train","Ship"],["fridge","washing machine","microwave oven"]],
+    "values":[["areoplane","car","bus","train","Ship"],["fridge","washing machine","microwave oven"]]
 
   },
   "slider":{

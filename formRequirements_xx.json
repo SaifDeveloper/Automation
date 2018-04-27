@@ -1,0 +1,51 @@
+[
+  {
+    "type":"textbox",
+    "number":3,
+    "placeholders":["Enter your first name","Enter your last name","Enter your email"]
+  },
+  {
+    "type": "radio",
+    "number":1,
+    "options":[["mobile","TV","computer"]],
+    "values":[["1","2","3"]],
+    "placeholders":[["Select an option"]]
+  },
+  {
+    "type": "textarea",
+    "number":1,
+    "placeholders":["Enter some text here"]
+  },
+  {
+    "type":"checkbox",
+    "number":1,
+    "placeholders":["check me","check me also"]
+  },
+  {
+    "type":"datepicker",
+    "number":1
+  },
+  {
+  "type":"select",
+  "number":1,
+  "placeholders":["Select an option"],
+  "options":[["aeroplane","car","bus","train","Ship"]],
+  "values":[["areoplane","car","bus","train","Ship"]]
+
+},
+  {
+  "type":"slider",
+  "number":1
+},
+  {
+  "type":"slide_toggle",
+  "number":1,
+  "placeholders":["Slide Me","Slide Me also"]
+},
+  {
+  "type":"buttons",
+  "number":2,
+  "placeholders":["Button 1","Button 2","Button 3","Button 4"],
+  "color":["primary","accent","warn","primary"]
+}
+]
